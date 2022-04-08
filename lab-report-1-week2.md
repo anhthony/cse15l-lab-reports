@@ -1,3 +1,3 @@
 # report
-'
+
 ![Image](testImage.png)
