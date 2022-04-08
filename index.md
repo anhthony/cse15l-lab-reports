@@ -6,3 +6,5 @@ it [worked](https://anhthony.github.io/cse15l-lab-reports/)
 ## heading
 
 >ayoo
+
+![Image](testImage.png)
