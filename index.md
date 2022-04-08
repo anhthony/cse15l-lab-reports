@@ -7,4 +7,3 @@ it [worked](https://anhthony.github.io/cse15l-lab-reports/)
 
 >ayoo
 
-![Image](testImage.png)
