@@ -160,23 +160,7 @@ To make remote accessing even easier, there are many things that you can do:
     * Running `pwd; javac WhereAmI.java; java WhereAmI` will list your current absolute path, compile `WhereAmI.java`, and run `WhereAmI.java`.
 * You can also use the up- and down-arrow keys to navigate between the commands you have used in the past.
 
-The following screenshot shows you a possible way to `scp` a file to your remote computer, compile and then run in on the remote computer!
+The following screenshot shows you a possible way to `scp` a file to your remote computer, compile and then run it on the remote computer!
 ![part6](part6.png)
 
 Try out these shortcuts and find other ways in which you can further optimize your remote accessing experience!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
