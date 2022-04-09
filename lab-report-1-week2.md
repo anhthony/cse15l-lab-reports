@@ -85,7 +85,11 @@ To log out of SSH, type 'exit'.
 
 Using the `WhereAmI.java` file we created earlier, we will copy and transfer it to your `ieng6` account.
 
-Type in the following (make sure you log out of `ieng6` first):
+In general, the `scp` command should follow this format:
+
+`scp <file-name> <account to transfer to>:~/`
+
+Type in the following from your local computer (make sure you log out of `ieng6` first):
 
 `scp HelloWorld.java <account-username>@ieng6.ucsd.edu:~/`
 
@@ -99,6 +103,76 @@ This entire process should look something like this:
 
 Now you have successfully copied and transferred a file over to a remote computer from your own computer!
 ## **Part 5** - SSH Keygen
+Notice that every time you want to `scp` a file or if you are logging into a remote server with `ssh`, the terminal always prompts you for your password. While this adds an extra layer of security for you, at the same time, it can be a very repetitive and time-consuming process. Imagine if you have to switch back and forth between your local computer and the remote computer while working and you are prompted for your password everytime! Wouldn't it be annoying?
+
+To get around this issue, we use something called `ssh` keys. Using `ssh-keygen`, we create a pair of public and private keys. The private key goes into the client computer, your computer in this case, and the public key goes into the remote computer that you will be accessing. The `ssh` command will then use these two keys in place of your password! So if your computer and the remote computer you're connectng have the keys, then you will automatically log in whenever you use `ssh` without being prompted for your password.
+
+Do the following to set this up:
+
+**On your computer:**
+
+Type in `ssh-keygen`
+
+The terminal will then say `"Generating public/private rsa key pair."`, then:
+
+ `Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa`
+
+ Type in the file directory as exactly as they give, while replacing  `<user-name>` with your corresponding `<user-name>` on your computer. If unsure, run `pwd`, whatever comes right after `/Users/` is your `<user-name>`.
+
+ The terminal will then ask for a passphrase, do not put anything in and just hit enter. The terminal will ask you to put the passphrase again, and just hit enter again.
+
+ Afterwards, the terminal should say something like this:
+
+ `Your identification has been saved in /Users/<user-name>/.ssh/id_rsa.` 
+
+ `Your public key has been saved in /Users/<user-name>/.ssh/id_rsa.pub.`
+
+`The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 <user-name>@<system>.local`
+
+There will also be a randomart image of the key that is generated, you can safely ignore it.
+
+The file `id_rsa` is your private key, and the file `id_rsa.pub` is your public key.
+
+Now, we need to copy the public key file to the `.ssh` directory on your remote computer.
+
+Log in to your `ssh` account. Once logged on, run `mkdir .ssh`, which will create a directory named `.ssh` on your remote computer, then log out.
+
+Back on your computer, run:
+
+`scp /Users/<user-name>/.ssh/id_rsa.pub <account-username>@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+This command will copy and transfer the public key on your computer into a file called `authorized_keys` inside the `.ssh` directory in your remote computer. 
+
+After finishing this part, you should now be able to to run `scp` and `ssh` without a password. Try it out! It should look like this:
+![part5](part5.png)
+
+## **Part 6** - Optimizing Remote Running
+
+To make remote accessing even easier, there are many things that you can do:
+* You can call a command inside quotes after the `ssh` command, which will run that command on the remote computer. For example:
+
+    * Running `ssh cs15lsp22ahh@ieng6.ucsd.edu "pwd"` will log you into the remote computer, run the `pwd` command, which lists your absolute path, and then exit. Try it out for yourself with other commands!
+* You can call multiple commands on one line by using `;` to separate commands. For example:
+    * Running `pwd; javac WhereAmI.java; java WhereAmI` will list your current absolute path, compile `WhereAmI.java`, and run `WhereAmI.java`.
+* You can also use the up- and down-arrow keys to navigate between the commands you have used in the past.
+
+The following screenshot shows you a possible way to `scp` a file to your remote computer, compile and then run in on the remote computer!
+![part6](part6.png)
+
+Try out these shortcuts and find other ways in which you can further optimize your remote accessing experience!
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
