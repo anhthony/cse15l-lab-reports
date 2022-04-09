@@ -94,9 +94,10 @@ The terminal will prompt you for a password. The password is the same one that y
 Log back into your `ieng6` account and run `ls` to confirm that the file has been successfully transferred. Then run `javac WhereAmI.java` and `java WhereAmI` while logged into the `ieng6` account and check your output. See what's different from when you run it in your computer!
 
 This entire process should look something like this:
+
 ![part4](part4.png)
 
-You have successfully copied and transferred a file over to a remote computer from your own computer!
+Now you have successfully copied and transferred a file over to a remote computer from your own computer!
 ## **Part 5** - SSH Keygen
 
 
