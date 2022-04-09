@@ -108,7 +108,7 @@ Now you have successfully copied and transferred a file over to a remote compute
 ## **Part 5** - SSH Keygen
 Notice that every time you want to `scp` a file or if you are logging into a remote server with `ssh`, the terminal always prompts you for your password. While this adds an extra layer of security for you, at the same time, it can be a very repetitive and time-consuming process. Imagine if you have to switch back and forth between your local computer and the remote computer while working and you are prompted for your password everytime! Wouldn't it be annoying?
 
-To get around this issue, we use something called `ssh` keys. Using `ssh-keygen`, we create a pair of public and private keys. The private key goes into the client computer, your computer in this case, and the public key goes into the remote computer that you will be accessing. The `ssh` command will then use these two keys in place of your password! So if your computer and the remote computer you're connectng have the keys, then you will automatically log in whenever you use `ssh` without being prompted for your password.
+To get around this issue, we use something called `ssh` keys. Using `ssh-keygen`, we create a pair of public and private keys. The private key goes into the client computer, your computer in this case, and the public key goes into the remote computer that you will be accessing. The `ssh` command will then use these two keys in place of your password! So if your computer and the remote computer you're connecting to have the keys, then you will automatically log in whenever you use `ssh` without being prompted for your password.
 
 Do the following to set this up:
 
