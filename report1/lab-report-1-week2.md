@@ -1,4 +1,7 @@
 # **Report 1 (Week 1-2) - Remote Access**
+
+<font size= "2">By: Anthony Ton (A16841070)</font>
+
 In this post, you will learn how to remotely access your course-specific account on the `ieng6` server.
 
 ## **Part 1** - Setting up VSCode and Running A File
