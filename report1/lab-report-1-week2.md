@@ -50,7 +50,7 @@ Then you should see the terminal print out some stuff about your computer and th
 
 Under `Additional Accounts`, you will see your course-specific account(s). The account should be the course name, followed by the current quarter, then 3 random letters.
 ![p2Step1](part2step1.png)
-<font size = "1">*An account for CSE15L in Spring '22* </font>
+<font size = "1"> _An account for CSE15L in Spring '22_ </font>
 
 **Step 2:** Go back to your terminal in VSCode. In the terminal, type in the following command:
 
@@ -90,7 +90,7 @@ Try running any of the following commands and see what they do (you can run them
 
 ![part3](part3.png)
 
-<font size = "1">*Running some of the above commands in the terminal* </font>
+<font size = "1">_Running some of the above commands in the terminal_ </font>
 
 ## **Part 4** - Moving Files With `scp`
 
