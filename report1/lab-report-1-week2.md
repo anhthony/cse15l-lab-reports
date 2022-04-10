@@ -43,8 +43,8 @@ Then you should see the terminal print out some stuff about your computer and th
 
 ## **Part 2** - Remotely Connecting To `ieng6`
 
-\*\*Do Step 0 if you are using Windows, otherwise skip it\*\* <br>
-**Step 0:** Follow the directions [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) to install OpenSSH
+**Step 0:** Follow the directions [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) to install OpenSSH<br>
+\*\*Do Step 0 if you are using Windows, otherwise skip it\*\*
 
 **Step 1:** Look up your course-specific account [here](https://sdacs.ucsd.edu/~icc/index.php). Under `Account Lookup`, put in your PID (AXXXXXXXX) and username (\<username\>@ucsd.edu) and click submit. 
 
@@ -72,15 +72,25 @@ After logging in, then your terminal will look something like this:
 Congratulations, your computer is now connected to one of the computers in the CSE basement!
 
 ## **Part 3** - Running Commands
-Try running any of the following commands and see what they do:
+Try running any of the following commands and see what they do (you can run them on your local computer or on the remote computer you accessed):
 
-`ls`<br>
-`pwd`<br>
-`cd`<br>
-`cd ~`<br>
-`cd ..`
+\*\*To log out of SSH, type `exit`.\*\*
 
-To log out of SSH, type 'exit'.
+`ls` - lists all of the files and folders in the current directory<br>
+`pwd` - prints the current working directory (your absolute path)<br>
+`cd` - changes your directory to the specified directory, or your home directory if left blank<br>
+`cd ~` - changes your directory to your home directory<br>
+`cd ..` -  go up one directory, to the parent directory of the current directory you are in<br>
+`cd - ` - brings you to the directory that you were previously in<br>
+`cat [file]` - shows you the contents of `[file]`<br>
+`rm [file]` - removes `[file]` from your directory. Be careful when using this, there is no way to undo it!<br>
+`mkdir [name]` - makes a directory named `[name]`<br>
+`cp [file1] [file2]` - copies contents from `[file1]` to `[file2]`. If `[file2]` doesn't exist, it will create a file called `[file2]` then put `[file1]`'s contents in there<br>
+`touch [file]` - creates a file called `[file]`
+
+![part3](part3.png)
+
+<font size = "1">*Running some of the above commands in the terminal* </font>
 
 ## **Part 4** - Moving Files With `scp`
 
@@ -164,3 +174,7 @@ The following screenshot shows you a possible way to `scp` a file to your remote
 ![part6](part6.png)
 
 Try out these shortcuts and find other ways in which you can further optimize your remote accessing experience!
+___
+ **Sources**:
+* [Week 1 Lecture](https://docs.google.com/presentation/d/1M1usJWoXlajH29ONzpQ7L2BxeHMdL3C7sMUSBtogpOw/edit#slide=id.g120e3f4dfe5_0_1255)
+* [Lab 1 Write-Up](https://docs.google.com/document/d/1AO6RDoJnaWxMui-UFjEa_2bbQ4qcANpbIpPuV-awsOg/edit)
