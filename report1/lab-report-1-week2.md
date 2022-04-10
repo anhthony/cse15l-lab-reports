@@ -174,7 +174,7 @@ The following screenshot shows you a possible way to `scp` a file to your remote
 ![part6](part6.png)
 
 Try out these shortcuts and find other ways in which you can further optimize your remote accessing experience!
-___
- **Sources**:
+
+### **Sources**:
 * [Week 1 Lecture](https://docs.google.com/presentation/d/1M1usJWoXlajH29ONzpQ7L2BxeHMdL3C7sMUSBtogpOw/edit#slide=id.g120e3f4dfe5_0_1255)
 * [Lab 1 Write-Up](https://docs.google.com/document/d/1AO6RDoJnaWxMui-UFjEa_2bbQ4qcANpbIpPuV-awsOg/edit)
