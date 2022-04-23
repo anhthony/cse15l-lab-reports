@@ -4,7 +4,7 @@
 
 In this post, I will be going over the 3 code changes that me and my partner made to the ```MarkdownParse``` program that we were given in our lab on week 3.
 
-```MarkdownParse``` is a program that parses throught a ```.md``` file and returns all of the links contained in that file. Per the formatting of Markdown, links are usually shown in the format ```[<text>](<link>)```, so the program will look for all instances of this specific formatting in a ```.md``` file and return all of the links in that file.
+```MarkdownParse``` is a program that parses through a ```.md``` file and returns all of the links contained in that file. Per the formatting of Markdown, links are shown in the format ```[<text>](<link>)```, so the program will look for all instances of this specific formatting in a ```.md``` file and return all of the links in that file.
 
 For example, given a ```.md``` file like this:
 ```
