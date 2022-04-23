@@ -75,7 +75,7 @@ Because the difference in formatting between an image and a link in Markdown is 
  
  The if statement checks that the formatting is of a link before adding in the link into the ArrayList that stores the links. If the formatting has ```!``` before the ```[```, then the link will not be added. Otherwise, the link will be added.
 
-Before this code change, the failure-inducing input was a Markdown formatting for images that is very similar to the formatting for links. The bug was that we didn't account for this situation and the program was storing links as long as the ```[<text>](<link>)``` format was satisfied. This resulted in a symptom of the program outputting images' links when it is only supposed to be outputting links.
+Before this code change, the failure-inducing input was a Markdown formatting for images that is very similar to the formatting for links. The bug was that we didn't account for this situation and the program was storing links as long as the ```[<text>](<link>)``` format was satisfied. This resulted in a symptom of the program outputting images' links along normal links when it is only supposed to be outputting links.
 
 ## **Code Change #3**
 For our third code change, the [```FarApart.md```](https://anhthony.github.io/cse15l-lab-reports/report2/FarApart.md) file was a failure-inducing input for the program. Here is the contents of the file:
