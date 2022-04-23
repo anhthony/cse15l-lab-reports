@@ -106,6 +106,6 @@ We added in an else-if clause that follows the if clause from code change #2:
 
  Before this code change, the failure-inducing input was a ```.md``` file that had ```'[', ']', '(' and ')'``` that weren't in Markdown link formatting and the program was returning the stuff in between the parentheses. The bug was that the program wasn't able to tell whether ```'[', ']', '(' and ')'``` constituted a Markdown link formatting or not. As a result, the program had a symptom of outputting the stuff between the parentheses because it wasn't able to tell if the ```'[', ']', '(' and ')'``` was an actual Markdown link formatting or not.
 
-### **Sources**:
+### **Sources:**
 * [Lab 3 Write-Up](https://docs.google.com/document/d/1LnSfvTG_Hn2fxDtFMuhBhJqsf9336Bm1ljux2Af9FqE/edit#)
 * [Lab 3 Notes](https://docs.google.com/document/d/1j7j3V9y_np-_PW8wiLxfTX3LOZkv8d4R3hcUWgQe-zQ/edit?usp=sharing)
