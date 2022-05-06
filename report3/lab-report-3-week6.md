@@ -22,21 +22,22 @@ You can also use that same alias for when you try to ```scp``` a file from your 
 
 ![Choice1C](Choice1C.png)
 
-Here I used the alias in place of the account of the remote server to scp ```example.txt```, and it worked!
+Here I used the alias in place of the account of the remote server to ```scp example.txt```, and it worked!
 
 ## Choice #2 - Setup GitHub Access From ```ieng6```
 
 When using ```git``` commands in the terminal, ```git push``` doesn't really work when you try to push your commits to the remote repository. This is because GitHub doesn't really know who you (the computer) are when you are trying to push your commits. To resolve this, GitHub uses ```ssh``` keys for identification. To let GitHub know you who are, simply add the public ```ssh``` key of the computer you're running ```git push``` on to your GitHub account. For this post, I will be showing you how I did the GitHub access set up from my ```ieng6``` account.
 
-On my ```ieng6``` account, since I never had ```ssh``` keys on there, I ran ```ssh-keygen``` to create my public and private keys, named ```id_rsa.pub``` and ```id_rsa```, respectively. Both keys are stored in ```.ssh``` directory by default. Here is a picture of my public key's contents and where my private key is stored:
+On my ```ieng6``` account, since I never had ```ssh``` keys on there, I ran ```ssh-keygen``` to create my public and private keys, named ```id_rsa.pub``` and ```id_rsa```, respectively. Both keys are stored in the ```.ssh``` directory by default. Here is a picture of my public key's contents and where my private key is stored:
 
-![Choice2A](Choice2A.png)
+| ![Choice2A](Choice2A.png) |
+|:--:|
+| <b>My public key's location and contents.</b>|
 
-<font size= "2">My public key's location and contents.</font>
 
-![Choice2B](Choice2B.png)
-
-<font size= "2">My private key's location.</font>
+| ![Choice2B](Choice2B.png) |
+|:--:|
+| <b>My private key's location</b>|
 
 
 Then I copied the contents of my public key, go on GitHub, go to my account's settings, and on "SSH and GPG Keys", selected "New SSH Key", give it a title, pasted in the contents of the public key I copied from the terminal, and created a new key for my GitHub account. Here is a picture of my public key on GitHub: 
@@ -50,6 +51,7 @@ Now, in my ```ieng6``` account, I have a directory called ```SkillDemo1```, whic
 After I have done that, then on the GitHub webpage, I should see the changes that I have made.
 
 ![Choice2E](Choice2E.png)
+
 Here is a link to the commit that I made in the terminal: [https://github.com/anhthony/SkillDemo1/commit/f1cd800b3344bfa1d5a43faba9a08d1400cc287a](https://github.com/anhthony/SkillDemo1/commit/f1cd800b3344bfa1d5a43faba9a08d1400cc287a)
 
 ## Choice #3 - Copy Whole Directories With ```scp -r```
@@ -58,13 +60,13 @@ The ```scp``` command is a great command for copying a file from one computer to
 
 I will demonstrate using ```scp -r``` on my ```markdown-parser``` directory by ```scp```'ing it to my ```ieng6``` account and compiling and running my test file on the ```ieng6``` account in the picture below:
 
-[![Image from Gyazo](https://i.gyazo.com/d30e73e04ba097e3896ee293a2f454a0.gif)](https://gyazo.com/d30e73e04ba097e3896ee293a2f454a0)
+| [![Image from Gyazo](https://i.gyazo.com/d30e73e04ba097e3896ee293a2f454a0.gif)](https://gyazo.com/d30e73e04ba097e3896ee293a2f454a0) |
+|:--:|
+| <b>```scp```'ing ```markdown-parser``` to my ```ieng6``` account</b>|
 
-<font size= "2">```scp```'ing ```markdown-parser``` to my ```ieng6``` account</font>
-
-![Choice3A](Choice3A.png)
-
-<font size= "2">Compiling and running the test file, ```MarkdownParseTest.java```.</font>
+| ![Choice3A](Choice3A.png) |
+|:--:|
+| <b>Compiling and running the test file, ```MarkdownParseTest.java```.</b>|
 
 To make this entire process of ```scp```'ing, then logging into ```ssh``` and running the test file even faster, I can do it in one command line by using ```;```. My command line would then look like this: 
 ```
