@@ -8,9 +8,9 @@ In this post, I will be documenting my implementations of all of the group choic
 
 Choice #1 is about making using ```ssh``` even easier than what we did before (creating ```ssh``` keys). What we did in this choice is creating a ```config``` file in the ```.ssh``` directory that stores the host's name, the username to use to log into that host, and the private ```ssh``` key of our computer. In the file, we also provided an "alias" of the host to make it easier to type in the terminal when using ```ssh```. Here is my ```config``` file, which I created using ```touch``` and edited using ```vim```:
 
-![Choice1A](Choice1A.png)
-
-<font size= "2">Notice the "hi!" that I added using ```vim```!</font>
+| ![Choice1A](Choice1A.png) |
+|:--:|
+| <b>Notice the "hi!" that I added using ```vim```!</b>|
 
 In the ```config``` file, the alias that I mentioned earlier is what comes after ```Host``` in the file, so in this case, the alias is ```UCSD```. You can use the alias instead of your account username when using ```ssh``` to log into your remote computer. So if I do ```ssh UCSD```, I would be able to log in! Take a look below:
 
