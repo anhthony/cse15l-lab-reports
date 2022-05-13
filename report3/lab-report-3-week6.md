@@ -70,7 +70,7 @@ I will demonstrate using ```scp -r``` on my ```markdown-parser``` directory by `
 
 To make this entire process of ```scp```'ing, then logging into ```ssh``` and running the test file even faster, I can do it in one command line by using ```;```. My command line would then look like this: 
 ```
-scp -r . ieng6:~/markdown-parser; ssh ieng6 "cd markdown-parser; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
+scp -r . UCSD:~/markdown-parser; ssh UCSD "cd markdown-parser; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
 ```
 
 Note: I'm using ```/software/CSE/oracle-java-17/jdk-17.0.1/bin/javac``` instead of ```javac``` and 
