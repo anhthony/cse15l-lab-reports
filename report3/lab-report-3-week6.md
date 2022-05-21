@@ -1,4 +1,4 @@
-# **Report 3 (Week 5-6) - Remote Access**
+# **Report 3 (Week 5-6)**
 
 <font size= "2">By: Anthony Ton (A16841070)</font>
 
