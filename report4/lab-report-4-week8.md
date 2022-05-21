@@ -116,7 +116,7 @@ And then there's more text
 ```
 
 
-From VSCode's markdown preview, the expected output of `markdown-parse` when given this markdown snippet should be `[https://www.twitter.com, https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule, https://cse.ucsd.edu/]`, as you can see below.
+From VSCode's markdown preview, the expected output of `markdown-parse` when given this markdown snippet should be `[https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule]`, as you can see below.
 
 ![snip3Expected](snip3Expected.png)
 
@@ -142,7 +142,7 @@ For my group's implementation, we got `[]` as the output, which differs from the
 The other group's implementation's output was `[ https://www.twitter.com
 , 
 https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule
-, https://cse.ucsd.edu/]`, which is almost exactly like what the expected output was except for the whitespaces.
+, https://cse.ucsd.edu/]`, which also differs from the expected output.
 
 I don't think a small code change of less than 10 lines would make my group's program work for markdown snippet #3 and all related cases that have newlines in brackets and parentheses. This is because our program does not take into account new lines inside a markdown link formatting, therefore it is not able to recognize a valid markdown link formatting that spans across multiple lines. To fix this case of markdown link formatting, I believe a small code change of less than 10 lines would not be enough, and a whole revamp of the code would be needed instead.
 
