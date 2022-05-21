@@ -145,3 +145,6 @@ https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule
 , https://cse.ucsd.edu/]`, which is almost exactly like what the expected output was except for the whitespaces.
 
 I don't think a small code change of less than 10 lines would make my group's program work for markdown snippet #3 and all related cases that have newlines in brackets and parentheses. This is because our program does not take into account new lines inside a markdown link formatting, therefore it is not able to recognize a valid markdown link formatting that spans across multiple lines. To fix this case of markdown link formatting, I believe a small code change of less than 10 lines would not be enough, and a whole revamp of the code would be needed instead.
+
+### Sources
+N/A
