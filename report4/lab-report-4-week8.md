@@ -72,7 +72,7 @@ The test in the other group's implementation:
 ![otherSnip2Test](otherSnip2Test.png)
 
 ### **Result of The Test** ###
-After implementing a JUnit test on markdown snippet #1 on both my group's and the other group's implementation, I ran the test on both implementations and the test failed on both implementations. You can see below the expected vs. actual output of the test on both implementations.
+After implementing a JUnit test on markdown snippet #2 on both my group's and the other group's implementation, I ran the test on both implementations and the test failed on both implementations. You can see below the expected vs. actual output of the test on both implementations.
 
 Result of my group's implementation:
 ![mySnip2TestResult](mySnip2TestResult.png)
@@ -129,7 +129,7 @@ The test in the other group's implementation:
 ![otherSnip3Test](otherSnip3Test.png)
 
 ### **Result of The Test** ###
-After implementing a JUnit test on markdown snippet #1 on both my group's and the other group's implementation, I ran the test on both implementations and the test failed on both implementations. You can see below the expected vs. actual output of the test on both implementations.
+After implementing a JUnit test on markdown snippet #2 on both my group's and the other group's implementation, I ran the test on both implementations and the test failed on both implementations. You can see below the expected vs. actual output of the test on both implementations.
 
 Result of my group's implementation:
 ![mySnip3TestResult](mySnip3TestResult.png)
