@@ -3,6 +3,6 @@
 2. Week 3-4 Report: [Report 2](report2/lab-report-2-week4.md)
 3. Week 5-6 Report: [Report 3](report3/lab-report-3-week6.md)
 4. Week 7-8 Report: [Report 4](report4/lab-report-4-week8.md)
-5. Week 9-10 Report:
+5. Week 9-10 Report: [Report 5](report5/lab-report-5-week10.md)
 
 
