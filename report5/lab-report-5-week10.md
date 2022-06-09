@@ -54,7 +54,7 @@ I believe the bug in the provided implementation is that it does not check wheth
 ## **Test File `472.md`** ##
 
 ### **Expected Output** ###
-By using VSCode Preview on the test file, the expected output when running `MarkdownParse` on `472.md` is `[/url]`, meaning that there is a link called `<>` in `472.md`. The below picture shows the expected output of the test using VSCode Preview.
+By using VSCode Preview on the test file, the expected output when running `MarkdownParse` on `472.md` is `[/url]`, meaning that there is a link called `/url` in `472.md`. The below picture shows the expected output of the test using VSCode Preview.
 
 | ![expected472](expected472.png) |
 |:--:|
