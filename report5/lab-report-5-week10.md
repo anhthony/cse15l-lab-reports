@@ -78,7 +78,7 @@ When running the provided implementation on `472.md`, we got `[/url]`, as you ca
 
 Based on the expected output from VSCode Preview, the provided implementation for `472.md` is correct, while my group's implementation is incorrect.
 
-I believe the bug in my group's implementation is that for every potential link that we add in, we only check to see if the link has a `.` in it, and not whether if it has a `/`, which could also represent a valid link within the markdown file's directory. In the following picture, the highlighted part is where the code change should be. The change would include a way to identify if there is a `.` *or* a `/` in `link` to make sure that it is a valid link before adding it into the ArrayList that will be returned.
+I believe the bug in my group's implementation is that for every potential link that we add in, we only check to see if the link has a `.` in it, and not whether if it has a `/`, which could also represent a valid link within the markdown file's directory. In the following picture, the highlighted part is where the code change should be. The change would include a way to identify if there is a `.` *or* a `/` in `link` inside the if statement to make sure that it is a valid link before adding it into the ArrayList that will be returned.
 
 | ![472BugFix](472BugFix.png) |
 |:--:|
